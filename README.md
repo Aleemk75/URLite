@@ -1,4 +1,4 @@
-URLite - A URL Shortener Microservice
+**URLite** - A URL Shortener Microservice
 
 
 Shorten those long, unwieldy links with a single API call!
@@ -6,33 +6,37 @@ Shorten those long, unwieldy links with a single API call!
 This is a high-performance microservice built with Node.js, MongoDB, and Redis that generates unique short codes for long URLs and serves redirects quickly using an in-memory cache.
 
 
-🚀 Features
+🚀 **Features**
 
-URL Shortening: Converts long URLs into short, easy-to-share links.
+. URL Shortening: Converts long URLs into short, easy-to-share links.
 
-Rapid Redirection: Efficiently redirects users from the short link back to the original long URL.
+. Rapid Redirection: Efficiently redirects users from the short link back to the original long URL.
 
-Caching with Redis: Uses Redis as an in-memory data store for lightning-fast lookups of frequently accessed URLs.
+. Caching with Redis: Uses Redis as an in-memory data store for lightning-fast lookups of frequently accessed URLs.
 
-Persistence: Uses MongoDB (via Mongoose) to store and retrieve all URL mappings permanently.
+. Persistence: Uses MongoDB (via Mongoose) to store and retrieve all URL mappings permanently.
 
-Robust & Modular: Built with a clear structure using Node.js and Express.
+. Robust & Modular: Built with a clear structure using Node.js and Express.
 
-🛠️ Tech Stack
+🛠️ **Tech Stack**
 
 Technology	Purpose
 
 Node.js	JavaScript Runtime Environment
+
 Express.js	Web Framework for handling routing and middleware
+
 MongoDB	Primary Database for storing URL mappings
+
 Mongoose	Object Data Modeling (ODM) library for MongoDB
+
 Redis	Caching layer for high-speed lookups and session management
 
 Export to Sheets
 
-⚙️ Installation and Setup
+⚙️ **Installation and Setup**
 
-Prerequisites
+*Prerequisites*
 You need the following installed on your machine:
 
 Node.js (version 16 or higher)
