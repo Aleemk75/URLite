@@ -28,15 +28,13 @@ It also uses **Redis caching** for faster redirects and improved performance.
 
 
 
-*(Add your screenshots inside a `screenshots/` folder in your repo and update the paths above.)*
-
 ---
 
 ## ⚙️ Installation & Setup
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/Aleemk75/url-shortener.git
+   git clone <link>
    cd url-shortener
 
 
