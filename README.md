@@ -19,11 +19,13 @@ It also uses **Redis caching** for faster redirects and improved performance.
 ## 🖼️ Screenshots
 
 ### 1️⃣ Homepage / Input Page  
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a570ea2b-5f98-42d5-9c3d-a31a94a67c9e" />
+<img width="1366" height="647" alt="image" src="https://github.com/user-attachments/assets/299cc2aa-9093-435b-8348-ffe50a61c5b3" />
+
 
 
 ### 2️⃣ Shortened URL Preview  
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b0ac7800-1b98-4899-9df8-82f85d14d4f3" />
+<img width="1366" height="647" alt="image" src="https://github.com/user-attachments/assets/bbd6af34-cc55-4fe0-85de-32c42a24451c" />
+
 
 
 *(Add your screenshots inside a `screenshots/` folder in your repo and update the paths above.)*
