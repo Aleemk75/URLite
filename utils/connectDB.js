@@ -1,5 +1,9 @@
 import mongoose from "mongoose";
+import "dotenv/config";
 
-   export async function connectdb(url) {
-         await mongoose.connect(url);
+const MONGO_URI = process.env.MONGO_URI;
+
+   export async function connectdb() {
+         await mongoose.connect(MONGO_URI);
+         console.log("connecting....")
     }

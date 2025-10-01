@@ -61,11 +61,11 @@ export async function redirectUrl(req, res, next) {
         }
 
      
-        // console.time("RedirectTime"); // ⏱ start timer
+        console.time("RedirectTime"); // ⏱ start timer
         const checkUrlinCache = await redisClient.get(shortId);
         if (checkUrlinCache) {
             let cachedUrl = JSON.parse(checkUrlinCache);
-            // console.timeEnd("RedirectTime"); // ⏱ end timer
+            console.timeEnd("RedirectTime"); // ⏱ end timer
             return res.redirect(cachedUrl.longUrl);
         } else {
             let urls = await Url.findOne({ shortid: shortId });
@@ -76,10 +76,10 @@ export async function redirectUrl(req, res, next) {
                 EX: 60 * 60 * 24 * 2,
             });
 
-            // console.timeEnd("RedirectTime"); // ⏱ end timer
+            console.timeEnd("RedirectTime"); // ⏱ end timer
             res.redirect(urls.longUrl);
         }
-    } catch (err) {
+    } catch (err) { 
         res.status(500).send({ status: false, message: err.message });
     }
 }

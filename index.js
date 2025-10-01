@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
-connectdb(process.env.MONGO_URI)
+connectdb()
     .then(() => {
         console.log("connected to DB");
 
@@ -27,6 +27,7 @@ app.set("views", path.join(__dirname, "views"));
 
 
 import Router from "./routes/url.route.js";
+
 
 
 app.use("/", Router);

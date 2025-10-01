@@ -25,9 +25,15 @@
       font-weight: bold;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
      position: relative;
-      
+      display: flex;
+      /* justify-content:space-evenly; */
+      align-items: center;
+      max-height: 65px;
     }
-
+ .navbar p{
+      position:relative;
+      left: 35%;
+    }
     /* 📦 Main Content */
     .main-container {
       display: flex;
@@ -165,28 +171,34 @@
     .content-box h2{
         color: rgb(87, 86, 86);
     }
-  
+/*   
     .nav-btn{
 position: absolute;
 left: 50px;
-    }
+    } */
+
+   
   </style>
 </head>
 
 <body>
 
   <!-- 🔴 Navbar -->
-  <div class="navbar">   
-    URL Shortener
+  <div class="navbar">  
+    <form action="/" method="GET">
+      <button>home</button>
+    </form>
+    <p>URL Shortener</p>
+   
   </div>
 
   <!-- 📦 Main Content -->
   <div class="main-container">
     <div class="content-box">
-        <h2>Paste the URL to be shortened</h2>
+        <h2>Paste your long link here</h2>
       <form action="/url" method="POST">
         <input type="text" name="longUrl" placeholder="Enter long URL" required />
-        <button type="submit">Shorten URL</button>
+        <button type="submit">Get your short link</button>
       </form>
 
       <% if (shortUrl) { %>
