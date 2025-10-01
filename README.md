@@ -61,12 +61,15 @@ The app will start at 👉 http://localhost:5000
 📡 API Endpoints
 
 POST /shorten → Create a new short URL
+
 Request body:
+
 
 { "longUrl": "https://example.com/very/long/link" }
 
 
 GET /:shortId → Redirect to the original long URL
+
 
 🔮 Tech Stack
 
@@ -82,9 +85,8 @@ Nodemon (dev) – Hot reloading during development
 
 Aleem Khan
 
-💼 LinkedIn
+Check out my [LinkedIn Profile](https://www.linkedin.com/in/aleemkh4n/)
 
-💻 GitHub
 
 
 ⭐ If you like this project, don’t forget to star the repo!
